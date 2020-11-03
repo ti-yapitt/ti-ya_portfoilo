@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+}
+
+header {
+  background-image: url('../img/image1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  color: #fff;
+  background-attachment: fixed;
+  /* position: relative; */
+}
+
+header .header h1 {
+  font-size: 32px;  
+  text-align: center;
+  line-height: 280px;
+  font-weight: lighter;
+}
+
+header .hammenu i {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  font-weight: lighter;
+  font-size: 44px;
+  cursor: pointer;
+  background-color: rgba( 222, 222, 222, 0.5);
+  padding: 4px 4px 4px 4px ;
+  border-radius: 4px;
+}
+
+.closeham i {
+  font-size: 44px;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  font-weight: lighter;
+  cursor: pointer;
+  color: #222;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.menu0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba( 222, 222, 222, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.menu0 .article0  {
+  padding: 200px 0 0 0 ;
+}
+
+.menu0 .article0 li {
+  list-style: none;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.menu0 .article0 li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+.menu0 .article0 li a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: none;
+  /* z-index: 1; */
+}
+
+.about {
+  margin: 80px auto;
+  width: 90%;
+  /* z-index: 1; */
+}
+
+.about .intromyself {
+  margin: 24px auto;
+  text-align: center;
+}
+
+.about .intromyself img {
+  width: 52%;
+  border-radius: 50%;
+  
+}
+
+.about h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 32px;
+}
+
+.about .intromyself .introp {
+  margin-top: 60px;
+}
+
+.skills {
+  background-image: url(../img/image4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.skills h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 32px;
+  margin-top: 60px;
+  padding-top: 72px;
+}
+
+.skills .webskill {
+  margin: 36px auto 0;
+  width: 90%;
+  padding-bottom: 80px;
+}
+
+.skills .webskill .skill1 div {
+  padding-top: 32px;
+  font-size: 120px; 
+  text-align: center;
+}
+
+.skills .webskill .skill2 div {
+  padding-top: 40px;
+  font-size: 120px; 
+  text-align: center;
+}
+
+.skills .webskill .skill3 div {
+  padding-top: 40px;
+  font-size: 120px; 
+  text-align: center;
+}
+
+.skills .webskill .skill1 p {
+  text-align: center;
+}
+
+.skills .webskill .skill2 p {
+  text-align: center;
+}
+
+.skills .webskill .skill3 p {
+  text-align: center;
+}
+
+.works {
+  width: 100%;
+  background-image: url(../img/image5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.works h1 {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 32px;
+  padding-top: 72px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.works .myworks > div{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works .myworks a img{
+  width: 80%;
+  margin: 28px auto 0;
+}
+
+.works .myworks p {
+  width: 80%;
+  color: #fff;
+  margin: 32px auto;
+  padding: 4px;
+  transition: background 0.5s;
+}
+
+.works .myworks p:hover {
+  background-color: rgba( 222, 222, 222, 0.8);
+  color: #222;
+}
+
+.works {
+  padding-bottom: 100px;
+}
+
+.contact h1 {
+  text-align: center;
+  color: #222;
+  font-weight: lighter;
+  padding-top: 72px;
+  padding-bottom: 20px;
+}
+
+.contact .form {
+  text-align: center;
+}
+
+.contact .form input {
+  width: 50%;
+  height: 32px;
+  border: #222 solid 2px;
+  border-radius: 4px;
+}
+
+.contact .form .form3 textarea {
+ height: 72px;
+ width: 50%;
+ border: #222 solid 2px;
+ border-radius: 4px;
+}
+
+.contact .form > div {
+  padding-top: 36px;
+}
+
+.contact .form div p {
+  margin-bottom: 12px;
+}
+
+.contact .submit {
+  margin: 60px auto;
+  text-align: center;
+  width: 88px;
+  height: 36px;
+  background-color: #555;
+  color: #fff;
+  line-height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact .submit:hover {
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #eee;
+  width: 100%;
+  height: 200px;
+}
+
+footer p {
+  padding-top: 80px;
+  text-align: center;
+  line-height: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 900px) {
+  header {
+    height: 800px;
+  }
+
+header .header h1 {
+  font-size: 52px;
+  line-height: 600px;
+}
+  
+  header .hammenu i {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background-color: rgba( 222, 222, 222, 0.7);   
+  }
+
+  .menu .article {
+    display: flex;
+  }
+
+  .menu .article li {
+    list-style: none;
+  }
+
+  .menu .article li a {
+    text-decoration: none;
+    color: #222;
+    padding: 0 16px 0;
+    line-height: 48px;
+    cursor: pointer;
+  }
+
+  .menu .article li a:hover {
+    text-decoration: underline;
+  }
+
+  .about {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .about h1 {
+    font-size: 48px;
+  }
+
+  .about .intromyself {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  .about .intromyself .introp {
+    padding-top: 68px;
+  }
+
+  .about .intromyself img {
+    width: 400px;
+    margin-right: 36px;
+  }
+
+  .skills h1 {
+    font-size: 48px;
+  }
+
+  .skills .webskill {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 160px;
+  }
+
+  .skills .webskill .skill1 {
+    width: 24%;
+  }
+
+  .skills .webskill .skill2 {
+    width: 24%;
+  }
+
+  .skills .webskill .skill3 {
+    width: 24%;
+  }
+
+  .works h1 {
+    font-size: 48px;
+  }
+
+  .works .myworks {
+    display: flex;
+  }
+
+  .contact h1 {
+    font-size: 48px;
+  }
+
+  .contact .form input {
+    width: 440px;
+    height: 32px;
+    border: #222 solid 2px;
+    border-radius: 4px;
+  }
+
+  .contact .form .form3 textarea {
+    height: 84px;
+    width: 440px;
+    border: #222 solid 2px;
+    border-radius: 4px;
+  } 
+
+
+
+
+
+
+  @media (min-width:1300px) {
+    .works .myworks {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    
+
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="a1">
+    <div class="hammenu"><i class="far fa-bars"></i></div>
+    <div class="header">
+      <h1>Taniguchi's Home</h1>
+    </div>
+  </header>
+  
+  <div class="closeham hidden">
+    <i class="fal fa-times"></i>
+  </div>
+  <div class="menu0 hidden">
+    <ul class="article0">
+      <li><a href="#a1">Home</a></li>
+      <li><a href="#a2">About</a></li>
+      <li><a href="#a3">Skills</a></li>
+      <li><a href="#a4">Works</a></li>
+      <li><a href="#a5">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="menu">
+    <ul class="article">
+      <li><a href="#a1">Home</a></li>
+      <li><a href="#a2">About</a></li>
+      <li><a href="#a3">Skills</a></li>
+      <li><a href="#a4">Works</a></li>
+      <li><a href="#a5">Contact</a></li>
+    </ul>
+  </div>
+
+
+  <main>
+    <section class="about" id="a2">
+      <h1>About Myself</h1>
+      <div class="intromyself">
+        <img src="img/image2.jpeg">
+        <div class="introp">
+          <p>Taniguchi</p>
+          <p>神奈川出身、大学生</p>
+          <p>筋トレ好き。英語、プログラミング勉強中。</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="skills" id="a3">
+      <h1>Skills</h1>
+      <div class="webskill">
+        <div class="skill1">
+          <div><i class="fab fa-html5"></i></div>
+          <p>HTMLコーディングで、見やすいウェブサイトを提供します。</p>
+        </div>
+        <div class="skill2">
+          <div><i class="fab fa-css3-alt"></i></div>
+          <p>CSSを使い、レスポンシブなウェブサイトにも対応可能です。</p>
+        </div>
+        <div class="skill3">
+          <div><i class="fab fa-js"></i></div>
+          <p>JavaScriptを使うことで画面に簡単な動きをつけ、さらに見やすいウェブサイトを作成します。</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="works" id="a4">
+      <h1>Works</h1>
+      <div class="myworks">
+        <div class="work1">
+          <a href="file:///C:/Users/apple/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/My%20Biggest%20Practice/index.html" target="_blank"><img src="img/worksImage0.png"></a>
+          <p>Airbnbのサイトを模写コーディングしたものです。CSSでレスポンシブのウェブサイトにしているだけでなく、JavaScriptを使うことで、フォーム入力画面が出てくるようになっています。</p>
+        </div>
+        <div class="work2">
+          <a href="file:///C:/Users/apple/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/How%20To%20Work%20Out/indexphp1.html#2" target="_blank"><img src="img/worksImage1.png" alt=""></a>
+          <p>私が初めて作ったウェブサイトになります。</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact" id="a5">
+      <h1>Contact</h1>
+      <div class="form">
+        <div class="form1">
+          <p>Your Name</p>
+          <input type="text" placeholder="こちらのフォームはダミーになります。">
+        </div>
+        <div class="from2">
+          <p>Your Email</p>
+          <input type="text" placeholder="こちらのフォームはダミーになります。">
+        </div>
+        <div class="form3">
+          <p>Messages</p>
+          <textarea name="" id="" cols="30" rows="10" placeholder="こちらのフォームはダミーになります。"></textarea>
+        </div>
+      </div>
+      <div class="submit">Submit</div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>Copyright © 2020 Taniguchi's Home/All Right Reserved</p>
+  </footer>
+  <script src="js/main.js"></script>
+
+  <script>
+    function selectorEscape(val) {
+        return val.replace(/[ !"$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~]/g, '\\$&');
+    }
+    $(function () {
+            $('a[href^="#"]').click(function () {
+                var time = 400;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : selectorEscape(href));
+                var position = target.offset().top;
+                $("html,body").animate({ scrollTop: position }, time, "swing");
+                return false;
+            });
+        });
+</script>
+</body>
+</html>
